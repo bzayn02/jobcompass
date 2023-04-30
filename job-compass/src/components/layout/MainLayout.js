@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
 
             {/* Body */}
             <div className="m-auto p-12 min-h-[85vh]  bg-zinc-100">
-                <div className="max-w-xl m-auto">
+                <div className="d-flex m-auto">
                     <div>{children}</div>
                 </div>
             </div>
