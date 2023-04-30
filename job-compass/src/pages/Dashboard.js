@@ -9,7 +9,7 @@ const Dashboard = () => {
         <MainLayout>
             <div className="">
                 <h1>OverView</h1>
-                <div className=" d-flex flex-wrap justify-content-around text-slate-200">
+                <div className="d-flex flex-wrap justify-content-around text-slate-200">
                     <div className="text-center bg-slate-600 p-6 mt-3 hover:bg-white hover:text-black">
                         <h2>Application Submit</h2>
                         <span>10</span>

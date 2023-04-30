@@ -4,7 +4,10 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Tracker from './pages/Tracker/Tracker';
 import CV from './pages/CV';
-import Profile from './pages/Profile';
+import TooltipPositionedExample from './pages/Profile1';
+import Interview from './pages/Interview';
+import ChatGPT from './components/ChatGPT';
+// import Profile from './pages/Profile';
 
 function App() {
     return (
@@ -16,7 +19,13 @@ function App() {
                     <Route path="/cv" element={<CV />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/jobtracker" element={<Tracker />} />
-                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/interview" element={<Interview />} />
+                    <Route path="/chatgpt" element={<ChatGPT />} />
+
+                    <Route
+                        path="/profile"
+                        element={<TooltipPositionedExample />}
+                    />
                 </Routes>
             </BrowserRouter>
         </div>

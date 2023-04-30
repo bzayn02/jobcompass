@@ -22,9 +22,11 @@ function TopNav() {
     return (
         <Navbar className="bg-slate-600" expand="md">
             <Container className="py-4">
-                <div className="no-underline text-gray-300 hover:text-white font-serif text-2xl hover:cursor-pointer">
-                    JobCompass
-                </div>
+                <Link to="/dashboard" className="no-underline">
+                    <div className=" text-gray-300 hover:text-white font-serif text-2xl hover:cursor-pointer">
+                        JobCompass
+                    </div>
+                </Link>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     className="bg-white "

@@ -6,13 +6,15 @@ export const TrackerContainer = styled.div`
 `;
 export const NavigationBarStyled = styled.div`
     display: flex;
+
     flex-direction: row;
     width: 100%;
     height: 60px;
     text-align: center;
     padding: 10px;
     justify-content: space-between;
-    background-color: #52b788;
+    background-color: black;
+
     h3 {
         width: 40px;
         height: 40px;
@@ -26,7 +28,7 @@ export const TrackerHeadingStyled = styled(motion.div)`
     flex-direction: column;
     width: 100%;
     /* height: 60px; */
-    color: black;
+    color: white;
 
     h2 {
         text-align: center;
@@ -35,9 +37,10 @@ export const TrackerHeadingStyled = styled(motion.div)`
         margin-left: 30px;
         display: flex;
         flex-direction: row;
+        color: black;
     }
     button {
-        background-color: #52b788;
+        color: black;
     }
 `;
 export const JobContainer = styled.div`
@@ -63,8 +66,9 @@ export const Container = styled.div`
     margin-top: 2em;
     height: fit-content;
     width: 40%;
-    background-color: #52b788;
+    background-color: #485569;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+    color: white;
     .name_title {
         /* font-size: 20px; */
         display: flex;
@@ -75,9 +79,13 @@ export const Container = styled.div`
             padding: 5px;
             background-color: white;
             border-radius: 20px;
+            color: black;
         }
         display: flex;
         flex-direction: column;
+    }
+    button {
+        color: black;
     }
     &:hover {
         box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
