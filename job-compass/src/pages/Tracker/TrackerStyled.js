@@ -35,6 +35,9 @@ export const TrackerHeadingStyled=styled(motion.div)`
     }
     h4{
         margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        
     }
     button{
         background-color: #52b788;  

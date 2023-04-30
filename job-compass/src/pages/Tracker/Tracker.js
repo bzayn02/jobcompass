@@ -15,10 +15,16 @@ import TopNav from '../../components/layout/Nav';
 
 export default function Tracker() {
     const [show, setShow] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
         console.log(show);
     }, [show]);
+
+    const openModal = () => {
+
+        setShow(true);
+        setIsOpen(true);
+    }
 
   return (
     <TrackerContainer>
@@ -28,10 +34,10 @@ export default function Tracker() {
           <h2>Job Tracker</h2>
           <h4>
             <AiFillPlusCircle />
-            <button onClick={()=>setShow(true)}>Add Page</button>
+            <button onClick={openModal}>Add Page</button>
           </h4>
         </TrackerHeadingStyled>
-        {show &&<Modal/>}
+        {show &&<Modal show={show} setShow={setShow}/>}
         <JobContainer>
           {content.map((item) => (
             <Container>
