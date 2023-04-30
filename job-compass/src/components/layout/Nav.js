@@ -32,18 +32,48 @@ function TopNav() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         {user?._id ? (
-                            <div>
-                                <span className="text-2xl text-gray-300 mr-5 font-serif">
-                                    Welcome{' '}
-                                    <span className="text-3xl text-neutral-50">
-                                        {user.name}
+                            <div className="d-flex">
+                                <div className="mr-10 ">
+                                    <ul className="fs-4 d-flex  flex-row  space-x-5">
+                                        <Link
+                                            className="no-underline text-emerald-200 hover:text-white"
+                                            to="/profile"
+                                        >
+                                            <li>Profile</li>
+                                        </Link>
+                                        <Link
+                                            className="no-underline text-emerald-200 hover:text-white"
+                                            to="/jobtracker"
+                                        >
+                                            <li>Job Tracker</li>
+                                        </Link>
+                                        <Link
+                                            className="no-underline text-emerald-200 hover:text-white"
+                                            to="/cv"
+                                        >
+                                            <li>CV</li>
+                                        </Link>
+                                        <Link
+                                            className="no-underline text-emerald-200 hover:text-white"
+                                            to="/interview"
+                                        >
+                                            <li>Interview</li>
+                                        </Link>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span className="text-2xl text-gray-300 mr-5 font-serif">
+                                        Welcome{' '}
+                                        <span className="text-3xl text-neutral-50">
+                                            {user.name}
+                                        </span>
                                     </span>
-                                </span>
-                                <i
-                                    className="fa fa-sign-out text-2xl text-gray-300 hover:cursor-pointer hover:text-gray-100"
-                                    aria-hidden="true"
-                                    onClick={handleOnLogout}
-                                ></i>
+                                    <i
+                                        className="fa fa-sign-out text-2xl text-gray-300 hover:cursor-pointer hover:text-gray-100"
+                                        aria-hidden="true"
+                                        onClick={handleOnLogout}
+                                    ></i>
+                                </div>
                             </div>
                         ) : (
                             <>
